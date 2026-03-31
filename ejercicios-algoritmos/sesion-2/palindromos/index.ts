@@ -1,4 +1,5 @@
 export default function posiblePalindromo(num: number): boolean {
   // TODO: implement
-  return false;
+  const reverse = Number(String(num).split("").reverse().join(""));
+  return num == reverse;
 }
