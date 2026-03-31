@@ -3,5 +3,5 @@ export default function stringTerminaCon(
   final: string
 ): boolean {
   // TODO: implement
-  return false;
+  return string.substring(final.length - 1) == final;
 }

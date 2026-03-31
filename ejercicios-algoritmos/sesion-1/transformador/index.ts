@@ -11,5 +11,13 @@ type Output = {
 
 export default function transformador(input: Input): Output[] {
   // TODO: implement
-  return [];
+  const resultado = [];
+  for (let i = 0; i < input.nombres.length; i++) {
+    resultado.push({
+      id: i + 1,
+      nombre: input.nombres[i],
+      edad: input.edades[i],
+    });
+  }
+  return resultado;
 }
